@@ -5,6 +5,13 @@ public class CicloFor {
     public CicloFor(){}
 
     public static void main(String[] args) {
+     
+        cicloFor();
+        mostrarAbecedario();
+    }
+    
+    public static void cicloFor(){
+    
         System.out.println("*********");
         System.out.println("CICLO FOR");
         System.out.println("*********");
@@ -14,21 +21,24 @@ public class CicloFor {
             i += 2;
             numeroEjecuciones++;
             System.out.println("Ejecucion " + numeroEjecuciones + " del bucle FOR, i vale " + i);
-        }
-        
-        mostrarAbecedario();
+        }         
+        System.out.println("\n\n\n");
     }
     
     public static void mostrarAbecedario(){
-        char caracter = 'A';
+        char letra = 'A';
         
         System.out.println("****************************");
         System.out.println("MOSTRAR ABECEDARIO COMPLETO");
         System.out.println("****************************");
         
         for(int i = 0; i<26; i++){
-            System.out.print(" " + caracter + "," );
-            caracter++;
+            if(i == 0){
+                System.out.print(" " + letra);
+            }else{
+            System.out.print(", " + letra);
+            }
+            letra++;
         }
     }
 }
