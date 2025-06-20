@@ -5,10 +5,19 @@ public class CicloFor {
     public CicloFor(){}
 
     public static void main(String[] args) {
-        // Llamadas a las funciones de los ejercicios
+    
+        // LLAMADAS A LOS EJERCICIOS
+        
+        // EJERCICIO 1: ejemplificativo del bucle For
         cicloForEjemplo();
+        // EJERCICIO 2: Metodo que muestra las letra completas del abecedario
         mostrarAbecedario();
+        // EJERCICIO 3: Tabla de multiplicar de un numero
         tablaMultiplicar();
+        // EJERCICIO 4: Producto de un numero
+        productoNumero();
+        // EJERCICIO 5: Detectar si un numero es primo
+        comprobarPrimo();
     }
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -62,4 +71,68 @@ public class CicloFor {
         System.out.println("\n\n");
     }
     
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // EJERCICIO 4: Producto de un numero
+    // Se hace la multiplicación mediante sumas sucesivas (en lugar de mediante un multiplicacion clasica)
+    public static void productoNumero(){
+        int n1 = 4; 
+        int n2 = 3; 
+        
+        
+        System.out.println("*********************");
+        System.out.println("PRODUCTO DE UN NUMERO");
+        System.out.println("*********************");
+        
+        //Mediante bucle for
+        int resultadoFor = 0;
+        
+        for (int i = 0; i < n2; i++){
+            resultadoFor += n1;
+        }
+        System.out.println(" RESULTADO MEDIANTE BUCLE FOR");
+        System.out.println(" " + n1 + " * " + n2 + " = " + resultadoFor);
+        
+        //Mediante bucle while
+        int resultadoWhile = 0;
+        int i = 0;
+        while(i<n2){
+            resultadoWhile += n1;
+            i++;
+        }
+        System.out.println(" RESULTADO MEDIANTE BUCLE WHILE");
+        System.out.println(" " + n1 + " * " + n2 + " = " + resultadoWhile);
+
+        //Mediante bucle DO-WHILE
+        int resultadoDoWhile = 0;
+        int n = 0;
+        do{
+            resultadoDoWhile += n1;
+            n++;
+        }while(n<n2);
+        
+        System.out.println(" RESULTADO MEDIANTE BUCLE DO-WHILE");
+        System.out.println(" " + n1 + " * " + n2 + " = " + resultadoDoWhile);
+        
+ 
+        System.out.println("\n\n");
+    } 
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // EJERCICIO 5: Detectar si un numero es primo
+    public static void comprobarPrimo(){
+        int n = 8;
+        
+        System.out.println("*****************************");
+        System.out.println("CALCULADORA DE NUMEROS PRIMOS");
+        System.out.println("*****************************");
+        
+        for(int i = 1; i <= n; i++){
+            if(n % i == 0){
+                if(i != 1 && i != n){
+                System.out.println("El numero "  + n + " NO es primo.");
+                break;
+                }
+            }
+        } 
+    }
 }
