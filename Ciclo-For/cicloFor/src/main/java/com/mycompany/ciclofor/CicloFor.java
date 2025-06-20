@@ -1,4 +1,4 @@
-
+package com.mycompany.ciclofor;
 
 public class CicloFor {
     
@@ -6,15 +6,16 @@ public class CicloFor {
 
     public static void main(String[] args) {
         // Llamadas a las funciones de los ejercicios
-        cicloFor();
+        cicloForEjemplo();
         mostrarAbecedario();
+        
     }
     
-    // Ejercicio ejemplificativo del bucle For
-    public static void cicloFor(){
+    // EJERCICIO 1: ejemplificativo del bucle For
+    public static void cicloForEjemplo(){
     
         System.out.println("*********");
-        System.out.println("CICLO FOR");
+        System.out.println("BUCLE FOR");
         System.out.println("*********");
         int numeroEjecuciones = 0;
         
@@ -26,7 +27,7 @@ public class CicloFor {
         System.out.println("\n\n\n");
     }
     
-    // Metodo que muestra las letra completas del abecedario
+    // EJERCICIO 2: Metodo que muestra las letra completas del abecedario
     public static void mostrarAbecedario(){
         char letra = 'A';
         
