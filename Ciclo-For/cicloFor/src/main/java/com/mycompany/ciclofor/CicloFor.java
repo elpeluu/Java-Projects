@@ -8,9 +8,10 @@ public class CicloFor {
         // Llamadas a las funciones de los ejercicios
         cicloForEjemplo();
         mostrarAbecedario();
-        
+        tablaMultiplicar();
     }
     
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // EJERCICIO 1: ejemplificativo del bucle For
     public static void cicloForEjemplo(){
     
@@ -24,9 +25,9 @@ public class CicloFor {
             numeroEjecuciones++;
             System.out.println("Ejecucion " + numeroEjecuciones + " del bucle FOR, i vale " + i);
         }         
-        System.out.println("\n\n\n");
+        System.out.println("\n\n");
     }
-    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // EJERCICIO 2: Metodo que muestra las letra completas del abecedario
     public static void mostrarAbecedario(){
         char letra = 'A';
@@ -43,5 +44,22 @@ public class CicloFor {
             }
             letra++;
         }
+        System.out.println("\n\n");
     }
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // EJERCICIO 3: Tabla de multiplicar de un numero
+    public static void tablaMultiplicar(){
+        int num = 6;
+        
+        System.out.println("*********************************");
+        System.out.println("TABLA DE MULTIPLICAR DE UN NUMERO");
+        System.out.println("*********************************");
+        
+        for(int i = 1; i <= 10; i++){
+            System.out.println(" " + num + " * " + i + " = " + num * i);
+        }
+        System.out.println("\n\n");
+    }
+    
 }
