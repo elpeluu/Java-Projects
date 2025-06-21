@@ -120,7 +120,7 @@ public class CicloFor {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // EJERCICIO 5: Detectar si un numero es primo
     public static void comprobarPrimo(){
-        int n = 8;
+        int n = 24;
         
         System.out.println("*****************************");
         System.out.println("CALCULADORA DE NUMEROS PRIMOS");
@@ -132,6 +132,9 @@ public class CicloFor {
                 System.out.println("El numero "  + n + " NO es primo.");
                 break;
                 }
+            }
+            if(i == n){
+                System.out.println("El numero " +  n + " SI es primo");
             }
         } 
     }
