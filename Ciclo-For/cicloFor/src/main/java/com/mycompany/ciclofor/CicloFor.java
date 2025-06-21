@@ -18,8 +18,6 @@ public class CicloFor {
         productoNumero();
         // EJERCICIO 5: Detectar si un numero es primo
         comprobarPrimo();
-        // EJERCICIO 6: Lista descendente de impares entre dos numeros
-        imparesDescendentes();
     }
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -162,42 +160,13 @@ public class CicloFor {
            if(n % indiceDoWhile == 0){
                 if(indiceDoWhile != 1 && indiceDoWhile != n){
                 System.out.println("El numero "  + n + " NO es primo. (DO-WHILE)");
-                System.out.println("\n\n");
                 break;
                 }
             }
             if(indiceDoWhile == n){
                 System.out.println("El numero " +  n + " SI es primo. (DO-WHILE)");
-                System.out.println("\n\n");
             } 
             indiceDoWhile++;
         }while(indiceDoWhile <= n);
     }
-    
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // EJERCICIO 6: Lista descendente de impares entre dos numeros
-    public static void imparesDescendentes(){
-        int alto = 23;
-        int bajo = 2; 
-        
-        System.out.println("****************************");
-        System.out.println("LISTA DESCENDENTE DE IMPARES");
-        System.out.println("****************************");
-        
-        System.out.println("Numero impares entre " + alto + " y " + bajo + ": ");
-        
-        for(int i = alto-1; i > bajo; i--){
-            if(i % 2 != 0){
-                if(i == bajo+1){
-                    System.out.print(i);
-                }else{
-                    System.out.print(i + ", ");
-                }
-            }
-        }
-        System.out.println("\n\n");
-    }
-    
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // EJERCICIO 7:
 }
