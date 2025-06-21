@@ -20,6 +20,8 @@ public class CicloFor {
         comprobarPrimo();
         // EJERCICIO 6: Lista descendente de impares entre dos numeros
         imparesDescendentes();
+        // EJERCICIO 7: Repeticion de un numero x veces
+        repetirNumero();
     }
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -199,5 +201,41 @@ public class CicloFor {
     }
     
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // EJERCICIO 7:
+    // EJERCICIO 7: Repeticion de un numero x veces
+    public static void repetirNumero(){
+        int num = 4;
+        int repeticiones = 3;
+        
+        System.out.println("***********************");
+        System.out.println("REPETICION DE UN NUMERO");
+        System.out.println("***********************\n");
+        
+        System.out.println("El numero " + num + " se pretende repetir " + repeticiones  + " veces.");
+        
+        //Bucle for
+        System.out.println("Bucle FOR");
+        for(int i = 0; i < repeticiones; i++){
+            System.out.print(num);
+        }
+        System.out.println("\n");
+        
+        //Bucle while
+        System.out.println("Bucle WHILE");
+        int i = 0;
+        while(i < repeticiones){
+            System.out.print(num);
+            i++;
+        }
+        System.out.println("\n");
+        
+        //Bucle do-while
+        int in = 0;
+        System.out.println("Bucle DO-WHILE");
+        do{
+            System.out.print(num);
+            in++;
+        }while(in < repeticiones);
+        System.out.println("\n\n");
+    }
+    
 }
