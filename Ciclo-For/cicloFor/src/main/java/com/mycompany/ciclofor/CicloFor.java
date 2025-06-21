@@ -126,16 +126,47 @@ public class CicloFor {
         System.out.println("CALCULADORA DE NUMEROS PRIMOS");
         System.out.println("*****************************");
         
+        // Mediante bucle FOR
         for(int i = 1; i <= n; i++){
             if(n % i == 0){
                 if(i != 1 && i != n){
-                System.out.println("El numero "  + n + " NO es primo.");
+                System.out.println("El numero "  + n + " NO es primo. (FOR)");
                 break;
                 }
             }
             if(i == n){
-                System.out.println("El numero " +  n + " SI es primo");
+                System.out.println("El numero " +  n + " SI es primo. (FOR)");
             }
         } 
+        
+        // Mediante bucle WHILE
+        int indiceWhile = 1;
+        while(indiceWhile <= n ){
+            if(n % indiceWhile == 0){
+                if(indiceWhile != 1 && indiceWhile != n){
+                System.out.println("El numero "  + n + " NO es primo. (WHILE)");
+                break;
+                }
+            }
+            if(indiceWhile == n){
+                System.out.println("El numero " +  n + " SI es primo. (WHILE)");
+            }
+            indiceWhile++;
+        }
+        
+        // Mediante bucle DO-WHILE
+        int indiceDoWhile = 1;
+        do{
+           if(n % indiceDoWhile == 0){
+                if(indiceDoWhile != 1 && indiceDoWhile != n){
+                System.out.println("El numero "  + n + " NO es primo. (DO-WHILE)");
+                break;
+                }
+            }
+            if(indiceDoWhile == n){
+                System.out.println("El numero " +  n + " SI es primo. (DO-WHILE)");
+            } 
+            indiceDoWhile++;
+        }while(indiceDoWhile <= n);
     }
 }
