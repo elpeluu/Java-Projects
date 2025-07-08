@@ -12,6 +12,8 @@ public class Vectores {
         buscarValor();
         //Ejercicio 3: Buscar pares
         buscarPares();
+        //Ejercicio 4: Media de numeros positivos y negativos
+        mediaPositivosNegativos();
     }
     ////////////////////////////////////////////////////////////////////////////
     //Ejercicio 1: Devolver un vector inversamente
@@ -83,5 +85,52 @@ public class Vectores {
                 }
             }
         }
+        System.out.println("\n\n");
     }
+    ////////////////////////////////////////////////////////////////////////////
+    //Ejercicio 4: Media de numeros positivos y negativos
+    public static void mediaPositivosNegativos(){
+        int[] v1 = {3, -5, 2, 4, -3, 1, 8, -10, 6, 4};
+        float mediaPos = 0;
+        float mediaNeg = 0;
+        int contadorPos = 0;
+        int contadorNeg = 0;
+        
+        System.out.println("*******************************************");
+        System.out.println("EJERCICIO 4: MEDIA DE POSITIVOS Y NEGATIVOS");
+        System.out.println("*******************************************");
+        
+        System.out.println("El vector es: ");
+        for (int i = 0; i < v1.length; i++){
+            if(i == v1.length - 1){
+                System.out.print(v1[i] + " ");
+            }else{
+                System.out.print(v1[i] + ", ");
+            }
+        }
+        System.out.println("\n");
+        
+        //Calculamos la media de los números positivos y negativos
+        for(int i = 0; i < v1.length; i++){
+            if(v1[i] > 0){
+                mediaPos += v1[i];
+                contadorPos += 1;
+            }else{
+                mediaNeg += v1[i];
+                contadorNeg += 1;
+            }
+        }
+        
+        mediaPos /= contadorPos;
+        mediaNeg /= contadorNeg;
+        
+        System.out.println("La media de los numero positivos es " + mediaPos);
+        System.out.println("La media de los numeros negativos es " + mediaNeg);
+        System.out.println(" ");
+        System.out.println("El vector contiene " + contadorPos + " numero positivos.");
+        System.out.println("El vector contiene " + contadorNeg + " numeros negativos.");
+        
+        System.out.println("\n\n");   
+    }
+    
 }
