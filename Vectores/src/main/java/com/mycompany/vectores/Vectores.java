@@ -14,6 +14,8 @@ public class Vectores {
         buscarPares();
         //Ejercicio 4: Media de numeros positivos y negativos
         mediaPositivosNegativos();
+        //Ejercicio 5: Matriz Bidimensional
+        matrizBidimensional();
     }
     ////////////////////////////////////////////////////////////////////////////
     //Ejercicio 1: Devolver un vector inversamente
@@ -133,4 +135,31 @@ public class Vectores {
         System.out.println("\n\n");   
     }
     
+    ////////////////////////////////////////////////////////////////////////////
+    //Ejercicio 5: Mtriz Bidimensional
+    public static void matrizBidimensional(){
+        //Matriz bidimensional de 5x5
+        int[][] w = new int[5][5];
+        int contador = 1;
+        
+        System.out.println("*********************************");
+        System.out.println("EJERCICIO 5: MATRIZ BIDIMENSIONAL");
+        System.out.println("*********************************");
+        
+        for(int i = 0; i < w.length; i++){
+            for(int j = 0; j < w.length; j++){
+                w[i][j] = contador;
+                contador++;
+            }
+        }
+        
+        for(int i = 0; i < w.length; i++){
+            for(int j = 0; j < w.length; j++){
+                System.out.print(w[i][j] + ", ");
+            }
+            System.out.println(" ");
+        }
+        
+        System.out.println("\n\n");
+    }
 }
