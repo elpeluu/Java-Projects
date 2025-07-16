@@ -46,6 +46,18 @@ public class ClasesObjetos {
         }else{
             System.out.println("La cadena NO es alfabetica");
         }
+        System.out.println("");
+        
+        System.out.println("********************************");
+        System.out.println("EJERCICIO 4: Reemplazar caracter");
+        System.out.println("********************************");
+        String cadena3 = "Diego Gorda";
+        int posicion1 = 7;
+        char caracter1 = 'a';
+        System.out.println(cadena3);
+        String cadenaNueva = reemplazarCaracter(posicion1, cadena3, caracter1);
+        System.out.println("La cadena corregida es:");
+        System.out.println(cadenaNueva);
     }  
     
     // ******************************************
@@ -85,5 +97,21 @@ public class ClasesObjetos {
             }
         }
         return true;
+    }
+    
+    // *******************************
+    // EJERCICIO 4:Reemplazar caracter
+    // *******************************
+    public static String reemplazarCaracter(int posicion, String cadena, char car){
+        // Comprobamos que la posicion indicada este dentro de los limites de la cadena
+        if(posicion > cadena.length() || posicion < 0){
+            System.out.println("La posicion no se corresponde con una de la cadena");
+        }
+        
+        // Realizamos el cambio de caracter en la cadena 
+        char[] caracteres = cadena.toCharArray();
+        caracteres[posicion] = car;
+        return new String(caracteres);
+        
     }
 }
