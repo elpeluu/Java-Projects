@@ -88,6 +88,13 @@ public class ClasesObjetos {
         int[] numeros = {32, 45, 65, 24, 67, 92, 4, 34, 24, 25, 45, 84, 29};
         minMaxArray(numeros);
         System.out.println("");
+        
+        System.out.println("************************************");
+        System.out.println("EJERCICIO 9:Escribir Texto Subrayado");
+        System.out.println("************************************");
+        String subrayado = "Scuderia Ferrari";
+        subrayarTexto(subrayado);
+        System.out.println("");
     }  
     
     // ******************************************
@@ -227,5 +234,18 @@ public class ClasesObjetos {
         }
         System.out.println("El minimo es: " + min);
         System.out.println("El maximo es: " + max);
+    }
+    
+    // *************************************
+    // EJERCICIO 9: Escribir texto subrayado
+    // **************************+**********
+    public static void subrayarTexto(String texto){
+        System.out.println("El texto a subrayar es: " + texto);
+        System.out.println("\nTexto subrayado: ");
+        
+        System.out.println(texto);
+        for (int i = 0; i < texto.length(); i++) {
+            System.out.print("-");   
+        }
     }
 }
