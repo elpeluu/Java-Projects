@@ -60,11 +60,11 @@ public class ClasesObjetos {
         System.out.println(cadenaNueva);
         System.out.println("");
         
-        System.out.println("**************************");
-        System.out.println("EJERCICIO 5: Funcion sumar");
-        System.out.println("**************************");
-        int num1 = 5, num2 = 14;
-        sumar(num1, num2); 
+        System.out.println("********************************");
+        System.out.println("EJERCICIO 5: Funcion Calculadora");
+        System.out.println("********************************");
+        int num1 = 10, num2 = 4;
+        calculadora(num1, num2); 
         System.out.println("");
     }  
     
@@ -122,11 +122,29 @@ public class ClasesObjetos {
         return new String(caracteres);   
     }
     // *************************************
-    // EJERCICIO 5:Funcion sumar
+    // EJERCICIO 5:Funcion Calculadora
     // *************************************
-    public static void sumar(int n1, int n2){
+    public static void calculadora(int n1, int n2){
     
-       int resultado = n1 + n2; 
-       System.out.println(" " + n1 + " + " + n2 + " = " + resultado);
+        System.out.println("Operandos: " + n1 + ", " + n2);
+        System.out.println("Suma");
+        int suma = n1 + n2; 
+        System.out.println(" " + n1 + " + " + n2 + " = " + suma);
+        
+        System.out.println("Resta");
+        int resta = n1 - n2; 
+        System.out.println(" " + n1 + " - " + n2 + " = " + resta);
+        
+        System.out.println("Multiplicacion");
+        int mul = n1 * n2; 
+        System.out.println(" " + n1 + " x " + n2 + " = " + mul);
+        
+        System.out.println("Division");
+        float div = n1/n2; 
+        System.out.println(" " + n1 + " / " + n2 + " = " + div);
+        
+        System.out.println("Modulo (Resto)");
+        int mod = n1 % n2; 
+        System.out.println(" " + n1 + " % " + n2 + " = " + mod);
     }
 }
