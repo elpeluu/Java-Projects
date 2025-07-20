@@ -58,6 +58,14 @@ public class ClasesObjetos {
         String cadenaNueva = reemplazarCaracter(posicion1, cadena3, caracter1);
         System.out.println("La cadena corregida es:");
         System.out.println(cadenaNueva);
+        System.out.println("");
+        
+        System.out.println("**************************");
+        System.out.println("EJERCICIO 5: Funcion sumar");
+        System.out.println("**************************");
+        int num1 = 5, num2 = 14;
+        sumar(num1, num2); 
+        System.out.println("");
     }  
     
     // ******************************************
@@ -111,7 +119,14 @@ public class ClasesObjetos {
         // Realizamos el cambio de caracter en la cadena 
         char[] caracteres = cadena.toCharArray();
         caracteres[posicion] = car;
-        return new String(caracteres);
-        
+        return new String(caracteres);   
+    }
+    // *************************************
+    // EJERCICIO 5:Funcion sumar
+    // *************************************
+    public static void sumar(int n1, int n2){
+    
+       int resultado = n1 + n2; 
+       System.out.println(" " + n1 + " + " + n2 + " = " + resultado);
     }
 }
