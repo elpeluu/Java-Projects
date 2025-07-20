@@ -74,6 +74,13 @@ public class ClasesObjetos {
         int nEspacios = contrarEspacios(cadena4);
         System.out.println("Tiene " + nEspacios + " espacios.");
         System.out.println("");
+        
+        System.out.println("****************************************");
+        System.out.println("EJERCICIO 7:Sumar Digitos Texto Numerico");
+        System.out.println("****************************************");
+        String textoNumerico = "184"; 
+        sumarDigitos(textoNumerico);
+        System.out.println("");
     }  
     
     // ******************************************
@@ -172,5 +179,18 @@ public class ClasesObjetos {
             }
         }
         return contador;
+    }
+    // ***************************************************
+    // EJERCICIO 7:Sumar los dígitos de una texto numerico
+    // ***************************************************
+    public static void sumarDigitos(String texto){
+        System.out.println("La cadena numerica es: " + texto);
+        
+        int suma = 0; 
+        
+        for (int i = 0; i < texto.length(); i++) {
+            suma += Character.getNumericValue(texto.charAt(i));
+        }
+        System.out.println("La suma de los digitos es: " + suma);
     }
 }
