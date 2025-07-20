@@ -66,6 +66,14 @@ public class ClasesObjetos {
         int num1 = 10, num2 = 4;
         calculadora(num1, num2); 
         System.out.println("");
+        
+        System.out.println("**************************************");
+        System.out.println("EJERCICIO 6: Contar Espacios en Blanco");
+        System.out.println("**************************************");
+        String cadena4 = "No es oro todo lo que reluce";
+        int nEspacios = contrarEspacios(cadena4);
+        System.out.println("Tiene " + nEspacios + " espacios.");
+        System.out.println("");
     }  
     
     // ******************************************
@@ -146,5 +154,23 @@ public class ClasesObjetos {
         System.out.println("Modulo (Resto)");
         int mod = n1 % n2; 
         System.out.println(" " + n1 + " % " + n2 + " = " + mod);
+    }
+    
+    // *************************************
+    // EJERCICIO 6:Contar Espacios en Blanco
+    // *************************************
+    public static int contrarEspacios (String texto){
+        
+        System.out.println("El texto es: " + texto);
+        
+        char[] caracteres = texto.toCharArray();
+        int contador = 0;
+        
+        for (int i = 0; i < caracteres.length; i++) {
+            if(caracteres[i] == ' '){
+                contador++;
+            }
+        }
+        return contador;
     }
 }
