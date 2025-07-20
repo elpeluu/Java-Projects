@@ -81,6 +81,13 @@ public class ClasesObjetos {
         String textoNumerico = "184"; 
         sumarDigitos(textoNumerico);
         System.out.println("");
+        
+        System.out.println("********************************************");
+        System.out.println("EJERCICIO 8:Max y Min de un array (0 - 100)");
+        System.out.println("********************************************");
+        int[] numeros = {32, 45, 65, 24, 67, 92, 4, 34, 24, 25, 45, 84, 29};
+        minMaxArray(numeros);
+        System.out.println("");
     }  
     
     // ******************************************
@@ -192,5 +199,33 @@ public class ClasesObjetos {
             suma += Character.getNumericValue(texto.charAt(i));
         }
         System.out.println("La suma de los digitos es: " + suma);
+    }
+    
+    // ***************************************
+    // EJERCICIO 8:Minimo y maximo de un array
+    // **************************+************
+    public static void minMaxArray(int[] numeros){
+        int min = 101; 
+        int max = 0; 
+        
+        System.out.println("El array de numeros entre 0 y 100 es: ");
+        for (int i = 0; i < numeros.length; i++) {
+            if(i == numeros.length - 1){
+            System.out.println(numeros[i]);
+            }else{
+            System.out.print(numeros[i] + ", ");
+            }
+        }
+        
+        for (int i = 0; i < numeros.length; i++) {
+            if(numeros[i] < min){
+                min = numeros[i];
+            }
+            if(numeros[i] > max){
+                max = numeros[i];
+            }
+        }
+        System.out.println("El minimo es: " + min);
+        System.out.println("El maximo es: " + max);
     }
 }
