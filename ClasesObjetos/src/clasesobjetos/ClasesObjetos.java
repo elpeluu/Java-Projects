@@ -135,6 +135,13 @@ public class ClasesObjetos {
         int pot = 3; 
         potencia(num, pot);
         System.out.println("");
+        
+        System.out.println("******************************");
+        System.out.println("EJERCICIO 15: Formato a titulo");
+        System.out.println("******************************");
+        String titulo = "Bienvenidos";
+        formatoTitulo(titulo);
+        System.out.println("");
     }  
     
     // ******************************************
@@ -385,5 +392,32 @@ public class ClasesObjetos {
             resultado *= numero;
         }
         System.out.println(numero + " elevado a " + potencia + " es: " + resultado);
+    }
+    
+    // ***********************************
+    // EJERCICIO 14: Potencia de un numero
+    // ***********************************
+    public static void formatoTitulo(String texto){
+    
+        System.out.println("El texto es: " + texto);
+        
+        // Pasamos todo a mayusuclas
+        String cadenaTitulo = texto.toUpperCase();
+        char[] caracTitulo = cadenaTitulo.toCharArray();
+        
+        for (int i = 0; i < texto.length(); i++) {
+            System.out.print("-");
+        }
+        // Añadimos salto de linea
+        System.out.println("");
+        
+        for (int i = 0; i < texto.length(); i++) {
+            System.out.print(caracTitulo[i] + " ");
+        }
+        
+        System.out.println("");
+        for (int i = 0; i < texto.length(); i++) {
+            System.out.print("-");
+        }
     }
 }
