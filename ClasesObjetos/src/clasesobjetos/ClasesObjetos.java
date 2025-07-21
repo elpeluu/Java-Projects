@@ -95,6 +95,13 @@ public class ClasesObjetos {
         String subrayado = "Scuderia Ferrari";
         subrayarTexto(subrayado);
         System.out.println("");
+        
+        System.out.println("******************************************");
+        System.out.println("EJERCICIO 10:Sumar elementos de una matriz");
+        System.out.println("******************************************");
+        int[] enteros = {1, 4, 6, 2, 7, 8, 10};
+        sumaElementosArray(enteros);
+        System.out.println("");
     }  
     
     // ******************************************
@@ -210,7 +217,7 @@ public class ClasesObjetos {
     
     // ***************************************
     // EJERCICIO 8:Minimo y maximo de un array
-    // **************************+************
+    // ***************************************
     public static void minMaxArray(int[] numeros){
         int min = 101; 
         int max = 0; 
@@ -238,7 +245,7 @@ public class ClasesObjetos {
     
     // *************************************
     // EJERCICIO 9: Escribir texto subrayado
-    // **************************+**********
+    // *************************************
     public static void subrayarTexto(String texto){
         System.out.println("El texto a subrayar es: " + texto);
         System.out.println("\nTexto subrayado: ");
@@ -247,5 +254,27 @@ public class ClasesObjetos {
         for (int i = 0; i < texto.length(); i++) {
             System.out.print("-");   
         }
+    }
+    
+    // *****************************************
+    // EJERCICIO 10: Sumar enteros de una matriz
+    // **************************+**************
+    // Dada una matriz unidimensional de numeros, que se sumen todos esos valores
+    public static void sumaElementosArray(int[] numeros){
+        int suma = 0; 
+        
+        System.out.println("La matriz unidimensional es: ");
+        for (int i = 0; i < numeros.length; i++) {
+            if(i == numeros.length - 1){
+                System.out.println(numeros[i]);
+            }else{
+                System.out.print(numeros[i] + ", ");
+            }
+        }
+        
+        for (int i = 0; i < numeros.length; i++) {
+            suma += numeros[i];
+        }
+        System.out.println("La suma de los elementos es: " + suma);
     }
 }
