@@ -127,6 +127,14 @@ public class ClasesObjetos {
             System.out.println("No es polindromo");
         }
         System.out.println("");
+        
+        System.out.println("***********************************");
+        System.out.println("EJERCICIO 14: potencia de un numero");
+        System.out.println("***********************************");
+        int num = 2; 
+        int pot = 3; 
+        potencia(num, pot);
+        System.out.println("");
     }  
     
     // ******************************************
@@ -362,5 +370,20 @@ public class ClasesObjetos {
             i2--;
         }
         return true;
+    }
+    
+    // ***********************************
+    // EJERCICIO 14: Potencia de un numero
+    // ***********************************
+    public static void potencia(int numero, int potencia){
+        System.out.println("El numero es: " + numero);
+        System.out.println("La potencia es: " + potencia);
+        
+        int resultado = numero;
+        
+        for (int i = 0; i < potencia - 1; i++) {
+            resultado *= numero;
+        }
+        System.out.println(numero + " elevado a " + potencia + " es: " + resultado);
     }
 }
