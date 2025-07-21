@@ -102,6 +102,13 @@ public class ClasesObjetos {
         int[] enteros = {5, 2, 5, 3, 1};
         sumaElementosArray(enteros);
         System.out.println("");
+        
+        System.out.println("****************************");
+        System.out.println("EJERCICIO 11:Invertir cadena");
+        System.out.println("****************************");
+        String aInvertir = "Diego Garda Porto";
+        invertirCadena(aInvertir);
+        System.out.println("");
     }  
     
     // ******************************************
@@ -258,7 +265,7 @@ public class ClasesObjetos {
     
     // *****************************************
     // EJERCICIO 10: Sumar enteros de una matriz
-    // **************************+**************
+    // *****************************************
     // Dada una matriz unidimensional de numeros, que se sumen todos esos valores
     public static void sumaElementosArray(int[] numeros){
         int suma = 0; 
@@ -276,5 +283,29 @@ public class ClasesObjetos {
             suma += numeros[i];
         }
         System.out.println("La suma de los elementos es: " + suma);
+    }
+    
+    // *****************************
+    // EJERCICIO 11: Invertir cadena
+    // *****************************
+    public static void invertirCadena(String texto){
+        
+        System.out.println("La cadena es: " + texto);
+        
+        // Pasamos la cadena a un array de caracteres
+        char[] caracteres = texto.toCharArray();
+        
+        // Creamos la nueva cadena invertida con el mismo tamaño que la original
+        char[] caracteresInv = new char[caracteres.length];
+        int in = 0;
+        
+        for (int i = texto.length()-1; i >= 0; i--) {
+            caracteresInv[in] = caracteres[i];
+            in++;
+        }
+        
+        // Pasamos el array invertido a una cadena
+        String cadenaInv = new String(caracteresInv);
+        System.out.println("La cadena invertida es: " + cadenaInv);
     }
 }
