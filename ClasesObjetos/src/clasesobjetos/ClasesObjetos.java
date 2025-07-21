@@ -99,7 +99,7 @@ public class ClasesObjetos {
         System.out.println("******************************************");
         System.out.println("EJERCICIO 10:Sumar elementos de una matriz");
         System.out.println("******************************************");
-        int[] enteros = {1, 4, 6, 2, 7, 8, 10};
+        int[] enteros = {5, 2, 5, 3, 1};
         sumaElementosArray(enteros);
         System.out.println("");
     }  
