@@ -109,6 +109,24 @@ public class ClasesObjetos {
         String aInvertir = "Diego Garda Porto";
         invertirCadena(aInvertir);
         System.out.println("");
+        
+        System.out.println("*******************************");
+        System.out.println("EJERCICIO 12:Doble de un numero");
+        System.out.println("*******************************");
+        int doblar = 1244;
+        doble(doblar);
+        System.out.println("");
+        
+        System.out.println("*****************************");
+        System.out.println("EJERCICIO 13:Texto polindromo");
+        System.out.println("*****************************");
+        String poli = "Radar";
+        if(esPolindroma(poli)){
+            System.out.println("Es polindromo");
+        }else{
+            System.out.println("No es polindromo");
+        }
+        System.out.println("");
     }  
     
     // ******************************************
@@ -307,5 +325,42 @@ public class ClasesObjetos {
         // Pasamos el array invertido a una cadena
         String cadenaInv = new String(caracteresInv);
         System.out.println("La cadena invertida es: " + cadenaInv);
+    }
+    
+    // ********************************
+    // EJERCICIO 12: Doble de un numero
+    // ********************************
+    public static void doble(int numero){
+        int doble = 0; 
+        
+        doble = numero*2;
+        System.out.println("El numero es: " + numero);
+        System.out.println("El doble es: " + doble);
+    }
+    
+    // *******************************
+    // EJERCICIO 13: Cadena polindroma
+    // *******************************
+    // Comprueba que una cadena es polindroma (capicua pero en texto)
+    public static boolean esPolindroma(String texto){
+        
+        // Pasamos todo a minusculas para que sean iguales
+        String text = texto.toLowerCase();
+        
+        System.out.println("La palabra es: " + text);
+        
+        // Pasamos la cadena a array de 
+        // Creamos 2 para comparar
+        char[] car1 = text.toCharArray();
+        char[] car2 = text.toCharArray();            
+        int i2 = car2.length - 1;
+        
+        for (int i = 0; i < car1.length; i++) {
+            if(car1[i] != car2[i2]){
+                return false;
+            }
+            i2--;
+        }
+        return true;
     }
 }
