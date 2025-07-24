@@ -5,6 +5,11 @@ public class Animal {
     private int edad; 
     private String raza;
     
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // A partir de aqui encontramos lo que se conocen como METODOS ACCESORES
+    // Son los principales metodos de acceso a la infromacion de clases en 
+    // el encapsulamiento (GET y SET)
     public String getNombre(){
         return nombre;
     }
