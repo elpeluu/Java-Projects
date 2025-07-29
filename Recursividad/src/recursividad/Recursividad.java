@@ -21,6 +21,13 @@ public class Recursividad {
         int num1 = 6, num2 = 4; 
         System.out.println(num1 + " x " + num2 + " = " + multiplicar(num1, num2));
         System.out.println("");
+        
+        System.out.println("************************************************"); 
+        System.out.println("EJERCICIO 3: Factorial de un numero recursivamente");
+        System.out.println("************************************************");
+        int num_factorial = 4; 
+        System.out.println("El factorial de " + num_factorial + " es: " + factorial(4));
+        System.out.println("");
     }
     
     ////////////////////////////////////////////////////////////////////////////
@@ -46,4 +53,17 @@ public class Recursividad {
             return numero1 + multiplicar(numero1, numero2 - 1);
         }
     }
+    
+    ////////////////////////////////////////////////////////////////////////////
+    /// EJERCICIO 3: Factorial de un número recursivamente
+    ////////////////////////////////////////////////////////////////////////////
+    public static int factorial(int num){
+        if(num == 1){
+            return 1; 
+        }else{
+            return num * factorial(num - 1); 
+        }
+    }
+    
+    
 }
