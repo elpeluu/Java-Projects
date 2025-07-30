@@ -2,6 +2,10 @@ package recursividad;
 
 public class Recursividad {
 
+    /*
+    La recursividad consiste en utilizar lo que propiamente estamos diseñando
+    Nuestras propias herramientas
+    */
     
     public static void main(String[] args) {
     
@@ -64,6 +68,4 @@ public class Recursividad {
             return num * factorial(num - 1); 
         }
     }
-    
-    
 }
