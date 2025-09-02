@@ -9,8 +9,8 @@ public class InformacionPersonas {
         per1.mostrarInformacion();
         per2.mostrarInformacion();
         
+        System.out.println("Modificando direccion de " + per1.getNombre());
         per1.modificarDireccion("Calle Nueva");
         per1.mostrarInformacion();
-    }
-    
+    }  
 }

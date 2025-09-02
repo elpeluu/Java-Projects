@@ -26,4 +26,9 @@ public class Persona {
         System.out.println("La nueva direccion es: " + direccion);
         System.out.println("");
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+             
 }
